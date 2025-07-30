@@ -1,12 +1,12 @@
 # :bird: pterodactyl-installer
 
 # Easy Pterodactyl Installation
-# One step to download ,install and setup pterodactyl>>go to [Easy Pterodactyl](https://github.com/WeJZTeam/zaxx7-Pterodactyl-Auto/blob/main/QUICK-START.md)
+One step to download ,install and setup pterodactyl>>go to [Easy Pterodactyl](https://github.com/WeJZTeam/zaxx7-Pterodactyl-Auto/blob/main/QUICK-START.md)
 
 
 
 
-#Normal installation
+# Normal installation
 Unofficial scripts for installing Pterodactyl Panel & Wings. Works with the latest version of Pterodactyl!
 
 Read more about [Pterodactyl](https://pterodactyl.io/) here. This script is not associated with the official Pterodactyl Project.
