@@ -1,0 +1,1 @@
+curl -sSL https://raw.githubusercontent.com/zaxx7-Pterodactyl-Auto/pterodactyl-installer/master/one-liner.sh | bash 
