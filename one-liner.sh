@@ -1,6 +1,6 @@
 #!/bin/bash
-# One-liner Pterodactyl Auto Installer
-# Usage: curl -sSL https://raw.githubusercontent.com/zaxx7-Pterodactyl-Auto/pterodactyl-installer/master/one-liner.sh | bash
+# One-liner Pterodactyl Auto Installer (Fixed Version)
+# Usage: curl -sSL https://raw.githubusercontent.com/WeJZTeam/zaxx7-Pterodactyl-Auto/main/one-liner-fixed.sh | bash
 
 set -e
 
@@ -13,14 +13,18 @@ echo ""
 while [ -z "$ADMIN_USERNAME" ]; do
     echo -n "* Enter admin username: "
     read -r ADMIN_USERNAME
-    [ -z "$ADMIN_USERNAME" ] && echo "Username cannot be empty"
+    if [ -z "$ADMIN_USERNAME" ]; then
+        echo "Username cannot be empty"
+    fi
 done
 
 while [ -z "$ADMIN_PASSWORD" ]; do
     echo -n "* Enter admin password: "
     read -rs ADMIN_PASSWORD
     echo ""
-    [ -z "$ADMIN_PASSWORD" ] && echo "Password cannot be empty"
+    if [ -z "$ADMIN_PASSWORD" ]; then
+        echo "Password cannot be empty"
+    fi
 done
 
 echo -n "* Confirm admin password: "
@@ -38,7 +42,7 @@ echo "Starting installation..."
 # Set default values
 export MYSQL_DB="panel"
 export MYSQL_USER="pterodactyl"
-export MYSQL_PASSWORD=$(openssl rand -base64 32)
+export MYSQL_PASSWORD=$(openssl rand -base64 32 2>/dev/null || echo "randompassword123")
 export timezone="Europe/Stockholm"
 export email="admin@localhost"
 export user_email="admin@localhost"
