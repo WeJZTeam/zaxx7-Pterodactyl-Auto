@@ -1,4 +1,4 @@
-# :bird: pterodactyl-installer
+# 🐥 pterodactyl-installer
 
 # Easy Pterodactyl Installation
 One step to download ,install and setup pterodactyl>>go to [Easy Pterodactyl](https://github.com/WeJZTeam/zaxx7-Pterodactyl-Auto/blob/main/QUICK-START.md)
